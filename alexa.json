@@ -1,0 +1,76 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "little light",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "leave the light",
+                        "don't do little light "
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "littlelighton",
+                    "slots": [
+                        {
+                            "name": "lightState",
+                            "type": "lightState"
+                        }
+                    ],
+                    "samples": [
+                        "turn {lightState} the light",
+                        "light {lightState}",
+                        "switch the light {lightState}",
+                        "turn the light {lightState}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "lightID",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "lightState",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
