@@ -7,7 +7,7 @@ A minimalist example of Alexa-Lambda-Arduino integration. A user can invoke the 
 
 **lambda.py** is the function code for AWS lambda. Remember to add the Alexa skill as the only trigger of the function. 
 
-**server.ino** is the code for an ESP8266 board with Arduino (Wemos R1).
+**server.ino** is the code for an ESP8266 board with Arduino (Wemos D1).
 
 References
 
